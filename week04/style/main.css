@@ -1,0 +1,95 @@
+body{
+    font-family: "Open Sans Condensed", sans-serif, arial;
+    font-size: 18pt;
+}
+
+img#logo {
+    width: 200px;
+    height: 100px;
+}
+
+img#home-button {
+    width: 50px;
+    height: 50px;
+}
+
+div#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div#tab-container {
+    padding: 15px;
+    background: rgba(77, 80, 74, 0.842);
+}
+
+a {
+    text-decoration: none;    
+    color: cornsilk;
+}
+
+ul#tabs {
+    list-style-type: none;
+    width: 100%;
+    position: relative;
+    height: 27px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 11px;
+    
+  }
+
+  ul#tabs li {
+    display: block;
+    float: left;
+    margin: 0 0 0 4px;
+    height: 27px;
+    text-align: center;
+    padding: 5px 5px 0px 5px;
+  }
+
+  ul#tabs li a:hover {
+      background: rgba(77, 80, 74, 0.842);
+      padding: 25px;
+      
+      
+  }
+
+  aside {
+	background-color: rgba(77, 80, 74, 0.842);;
+    color: cornsilk;
+}
+
+  footer {
+	background-color: black;
+    color: cornsilk;
+}
+
+  nav a {
+	color: cornsilk;
+}
+
+  aside a {
+	color: inherit;
+    width: 20px;
+}
+
+  aside, footer {
+    padding: 20px;
+}
+
+  aside {
+	text-align: center;
+}
+
+  aside h1 {
+	font-size: 30px;
+	margin-bottom: 25px;
+}
+
+  aside li {
+	display: inline-block;
+}
+  

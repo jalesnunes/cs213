@@ -1,0 +1,41 @@
+
+body {
+    font: 18pt verdana;
+    background-color:#F0F0F7;
+}
+div#slogan {
+    font: 25pt Garamond;
+    display: flex;
+}
+select {
+    padding: 10px;
+    width: 205px;
+    border-radius: 10px;
+}
+input
+{
+    justify-content: left;
+    padding: 10px;
+    align-content: center;
+    margin: 5px;
+    width: 500px;
+    border-radius: 10px;
+}
+textarea {
+    padding: 10px;
+    margin: 5px;
+    width: 500px;
+    border-radius: 10px;
+}
+input#submit {
+    background-color: #04D361;
+    color: #FFF;
+}
+input#reset {
+    background-color: #04D361;
+    color: #FFF;
+}
+img#byu {
+    width: 500px;
+    height: 100px;
+}

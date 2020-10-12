@@ -1,0 +1,33 @@
+
+label {
+    padding: 10px;
+    margin-top: 10px;
+}
+select {
+    padding: 10px;
+    width: 205px;
+    border-radius: 10px;
+}
+input#submit, input#reset, input#name, input#tel, input#email
+{
+    justify-content: left;
+    padding: 10px;
+    align-content: center;
+    margin: 5px;
+    width: 500px;
+    border-radius: 10px;
+}
+textarea {
+    padding: 10px;
+    margin: 5px;
+    width: 500px;
+    border-radius: 10px;
+}
+input#submit {
+    background-color: #04D361;
+    color: #FFF;
+}
+input#reset {
+    background-color: #04D361;
+    color: #FFF;
+}
