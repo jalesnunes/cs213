@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/week07/style/main.css">
+    <script src="/week07/scripts/main.js"></script>
 </head>
+
 <body>
-    <h1>This will be assignment #7</h1>
+    <div class="container">
+        <header>
+            <img id="home" src="/week07/images/header.png" alt="home">
+        </header>
+        <div class="content-home">
+
+            <h1>Your Mortgage Payment Information</h1>
+            <div>
+                <form>
+                    <label for="APR ">Annual Percentage Rate </label> </br>
+                    <input type="number" name="apr" id="apr" value="0.00"  onfocus="if (this.value==this.defaultValue) this.value = ''"
+                    onblur="if (this.value=='') this.value = this.defaultValue"></br>
+                    <label for="term">Loan Term</label></br>
+                    <input type="number" name="term" id="term" value="0.00"  onfocus="if (this.value==this.defaultValue) this.value = ''"
+                    onblur="if (this.value=='') this.value = this.defaultValue"></br>
+                    <label for="amount">Loan Amount</label></br>
+                    <input type="number" name="amount" id="amount" value="0.00"  onfocus="if (this.value==this.defaultValue) this.value = ''"
+                    onblur="if (this.value=='') this.value = this.defaultValue"></br>
+                    <input id="calculate" style="width: 255px;" type="button" value="Calculate" onclick="calculatePayment()">
+                    <input id="clear" style="width: 255px;" type="button" value="Clear form" onclick="reset()"></br></br>
+                    <label for="payment" style="font-size: 20pt;">Payment</label></br>
+                    <input type="text" name="payment" id="payment" value="Here you will see your monthly payment"  onfocus="if (this.value==this.defaultValue) this.value = ''"
+                    onblur="if (this.value=='') this.value = this.defaultValue">
+
+                    <div id="errors"></div>
+                </form>
+            </div>        
+
+
+        </div>
+
+        <footer>
+            <h3>&copy; 2020 Jales Nunes, INC. ALL RIGHTS RESERVED.</h3>
+        </footer>
+    </div>
+
 </body>
+
 </html>

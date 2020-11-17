@@ -1,0 +1,212 @@
+body {
+    font-size: 18pt;
+}
+header {
+    background-image: url("/week05/images/headerBackground.jpg");
+    max-width: 100%;
+    height: 300px;
+    background-size: 100% 100%;
+    text-align: center;
+   
+}
+
+header h1 {
+    padding-top: 200px;
+}
+
+div#content {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: justify;
+}
+
+div#omnic-crisis img {
+    max-width: 100%; 
+    padding: 10px;
+}
+
+div#overwatch-fall img {
+    max-width: 40%; 
+    padding: 10px;
+}
+
+.main-char {
+    display: flex;
+    flex-direction: row;
+}
+
+.first-char, img#winston {
+    padding: 10px;
+    flex: 25%;
+    max-width: 50%;
+    float: left;
+    font-size: 15pt;
+    margin: auto;
+    background-color: teal;
+    
+}
+
+.second-char, img#reinhardt {
+    padding: 10px;
+    flex: 25%;
+    max-width: 50%;
+    float: left;
+    font-size: 15pt;
+    margin: auto;
+    background-color: rgb(225, 235, 134);
+}
+
+.trird-char, img#mercy {
+    padding: 10px;
+    flex: 25%;
+    max-width: 50%;
+    float: left;
+    font-size: 15pt;
+    margin: auto;
+    background-color: rgb(223, 175, 45);
+}
+
+.forth-char, img#mei {
+    padding: 10px;
+    flex: 25%;
+    max-width: 50%;
+    float: left;
+    font-size: 15pt;
+    margin: auto;
+    background-color: rgb(134, 223, 235);
+}
+
+footer {
+	background-color: black;
+    color: cornsilk;
+    padding: 20px;
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 3vw;
+    }
+    header {
+        height: 200px;
+        background-size: 100% 100%;
+        text-align: center;
+       
+    }
+
+    header h1 {
+        padding-top: 90px;
+    }
+
+    .main-char {
+        flex-direction: column;        
+    }
+
+    div#content {
+        margin: 0;
+        width: 95%;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    .first-char, img#winston {
+        padding: 10px;
+        flex: 95%;
+        max-width: 95%;
+        margin: 0;
+        
+    }
+    
+    .second-char, img#reinhardt {
+        padding: 10px;
+        flex: 95%;
+        max-width: 95%;
+        margin: 0;
+    }
+    
+    .trird-char, img#mercy {
+        padding: 10px;
+        flex: 95%;
+        max-width: 95%;
+        margin: 0;
+    }
+
+    .forth-char, img#mei {
+        padding: 10px;
+        flex: 95%;
+        max-width: 95%;
+        margin: 0;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 3vw;
+    }
+    header {
+        height: 200px;
+        background-size: 100% 100%;
+        text-align: center;
+       
+    }
+
+    header h1 {
+        padding-top: 40px;
+    }
+
+    .main-char {
+        flex-direction: column;        
+    }
+
+    div#content {
+        margin: 0;
+        width: 100%;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    .first-char, img#winston {
+        padding: 10px;
+        flex: 25%;
+        max-width: 50%;
+        float: left;
+        font-size: 15pt;
+        margin: auto;
+        background-color: teal;
+        
+    }
+    
+    .second-char, img#reinhardt {
+        padding: 10px;
+        flex: 25%;
+        max-width: 50%;
+        float: left;
+        font-size: 15pt;
+        margin: auto;
+        background-color: rgb(225, 235, 134);
+    }
+    
+    .trird-char, img#mercy {
+        padding: 10px;
+        flex: 25%;
+        max-width: 50%;
+        float: left;
+        font-size: 15pt;
+        margin: auto;
+        background-color: rgb(223, 175, 45);
+    }
+    
+    .forth-char, img#mei {
+        padding: 10px;
+        flex: 95%;
+        max-width: 95%;
+        float: left;
+        font-size: 15pt;
+        margin: 0;
+        background-color: rgb(134, 223, 235);
+    }
+    
+}

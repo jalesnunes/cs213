@@ -1,0 +1,15 @@
+<table>
+
+<tr><th>City</th><th>Population</th></tr>
+<tr><th>Toronto </th><th> 5,113,139 </th></tr>
+<tr><th>Montreal </th><th> 3,635,571 </th></tr>
+<tr><th>Vancouver </th><th> 2,226,581 </th></tr>
+<tr><th>Ottawa-Gatineau </th><th> 1,130,761 </th></tr>
+<tr><th>Calgary	</th><th> 1,079,310 </th></tr>
+<tr><th>Edmonton </th><th> 1,034,945 </th></tr>
+<tr><th>Quebec City	</th><th> 715,515 </th></tr>
+<tr><th>Winnipeg </th><th> 694,668 </th></tr>
+<tr><th>Hamilton </th><th> 692,911 </th></tr>
+<tr><th>London </th><th> 457,720 </th></tr>
+
+</table>

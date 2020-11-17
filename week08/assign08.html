@@ -1,11 +1,142 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Apple World</title>
+    <link rel="stylesheet" href="/week08/style/main.css">
+    <script src="/week08/scripts/main.js"></script>
 </head>
+
 <body>
-    <h1>This will be assignment #8</h1>
+    <div class="container">
+        <header>
+            <h1> Apple World</h1>
+        </header>
+
+        <div class="content-home">
+
+            <form>
+                <h2>Let's start your purchase with your personal information</h2>
+                <div class="personal-info">
+                    <label for="first_name">Enter your name</label><br>
+                    <input type="text" class="personal" name="first_name" id="first_name" required><br>
+                    <label for="last_name">Enter your last name</label><br>
+                    <input type="text" class="personal" name="last_name" id="last_name" required><br>
+                    <label for="address">Enter your address</label><br>
+                    <textarea name="address" id="address" cols="30" rows="10" required></textarea><br>
+                    <label for="phone">Enter your phone</label><br>
+                    <input type="tel" class="personal" name="phone" id="phone" required><br>
+                </div>
+                <h2>Choose your products:</h2>
+                <div>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>Item</th>
+                            <th>Name</th>
+                            <th>Cost</th>
+                            <th>Qt</th>
+                            <th></th>
+                            <th>Item</th>
+                            <th>Name</th>
+                            <th>Cost</th>
+                            <th>Qt</th>
+                        </tr>
+                        <tr>
+                            <th onchange="total()">
+                                <input type="radio" name="item_0" id="item_0" />
+                            </th>
+                            <th><img src="/week08/images/iphone.jpg" alt="iphone" style="width: 200px; height: 200px;">
+                            </th>
+                            <th>Iphone</th>
+                            <th>$ 997.54</th>
+                            <th onchange="total()"><input type="number" class="quantity" name="quantity_0"
+                                    id="quantity_0" min="1" required /></th>
+
+                            <th onchange="total()">
+                                <input type="radio" name="item_1" id="item_1">
+                            </th>
+                            <th><img src="/week08/images/ipad.jpg" alt="ipad" style="width: 200px; height: 200px;">
+                            </th>
+                            <th>Ipad</th>
+                            <th>$ 1123.56</th>
+                            <th onchange="total()"><input type="number" class="quantity" name="quantity_1"
+                                    id="quantity_1" min="1" required>
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th onchange="total()">
+                                <input type="radio" name="item_2" id="item_2">
+                            </th>
+                            <th><img src="/week08/images/apple-watch.jpg" alt="apple-watch"
+                                    style="width: 150px; height: 150px;"></th>
+                            <th>Apple Watch</th>
+                            <th>$ 298.63</th>
+                            <th onchange="total()"><input type="number" class="quantity" name="quantity_2"
+                                    id="quantity_2" min="1" required>
+                            </th>
+
+                            <th onchange="total()">
+                                <input type="radio" name="item_3" id="item_3">
+                            </th>
+                            <th><img src="/week08/images/apple-tv_.jpg" alt="apple-tv"
+                                    style="width: 150px; height: 150px;"></th>
+                            <th>Apple Tv</th>
+                            <th>$ 636.98</th>
+                            <th onchange="total()"><input type="number" class="quantity" name="quantity_3"
+                                    id="quantity_3" min="1" required>
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th onchange="total()">
+                                <input type="radio" name="item_4" id="item_4">
+                            </th>
+                            <th><img src="/week08/images/macpro.jpg" alt="macpro" style="width: 250px; height: 150px;">
+                            </th>
+                            <th>Macpro</th>
+                            <th>$ 1569.98</th>
+                            <th onchange="total()"><input type="number" class="quantity" name="quantity_4"
+                                    id="quantity_4" min="1" required>
+                            </th>
+
+                            <th onchange="total()">
+                                <input type="radio" name="item_5" id="item_5">
+                            </th>
+                            <th><img src="/week08/images/imac.jpg" alt="imac" style="width: 250px; height: 150px;">
+                            </th>
+                            <th>Imac</th>
+                            <th>$ 1798.32</th>
+                            <th onchange="total()"><input type="number" class="quantity" name="quantity_5"
+                                    id="quantity_5" min="1" required>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <b>Total</b><input type="text" name="total" id="total" placeholder="$ 0.00" readonly>
+                <br>
+
+                <p><b>Payment (Credit Card Only)</b></p>
+                <b>Credit Card Type</b><br>
+                <b>Visa<input type="radio" name="card" id="card"></b>
+                <b>MasterCard<input type="radio" name="card"></b>
+                <b>American Express</b><input type="radio" name="card"><br>
+                <b>Credit Card Number</b><input name="credit_card" id="credit_card" pattern="[0-9]{4}"
+                    placeholder="0000 0000 0000 0000" required><br>
+                <b>Expiration date</b><input name="day" id="exp_date_d" type="number" min="1" max="12" placeholder="00"
+                    required>/
+                <input name="month" id="exp_date_m" type="number" min="2020" max="2099" placeholder="0000" required><br><br>
+
+                <input id="submit" style="width: 255px;" type="button" value="Submit">
+                <input id="reset" style="width: 255px;" type="button" value="Reset" onclick="reset()">
+            </form>
+        </div>
+    </div>
+
 </body>
+
 </html>

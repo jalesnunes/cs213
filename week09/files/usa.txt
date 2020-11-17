@@ -1,0 +1,15 @@
+<table>
+
+<tr><th>City</th><th>Population</th></tr>
+<tr><th> New York </th><th>            8,143,197 </th></tr>
+<tr><th> Los Angeles </th><th>	    3,844,829 </th></tr>
+<tr><th> Chicago </th><th>		    2,842,518 </th></tr>
+<tr><th> Houston </th><th>		    2,016,582 </th></tr>
+<tr><th> Philadelphia </th><th>	    1,463,281 </th></tr>
+<tr><th> Phoenix </th><th>		    1,461,575 </th></tr>
+<tr><th> San Antonio </th><th>	    1,256,509 </th></tr>
+<tr><th> San Diego </th><th>	    1,255,540 </th></tr>
+<tr><th> Dallas	</th><th>	    1,213,825 </th></tr>
+<tr><th> San Jose </th><th>	      912,332 </th></tr>
+
+</table>

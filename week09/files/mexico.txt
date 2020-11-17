@@ -1,0 +1,15 @@
+<table>
+
+<tr><th>City</th><th>Population</th></tr>
+<tr><th>Mexico City </th><th> 8,589,600 </th></tr>
+<tr><th>Guadalajara </th><th> 1,797,600 </th></tr>
+<tr><th>Ecatepec </th><th> 1,688,600 </th></tr>
+<tr><th>Nezahualcoyotl </th><th> 1,480,800 </th></tr>
+<tr><th>Puebla </th><th> 1,308,700 </th></tr>
+<tr><th>Monterrey </th><th> 1,236,900 </th></tr>
+<tr><th>Tijuana </th><th> 1,182,900 </th></tr>
+<tr><th>Ciudad Juarez </th><th> 1,126,700 </th></tr>
+<tr><th>Leon </th><th> 994,700 </th></tr>
+<tr><th>Naucalpan </th><th> 953,800 </th></tr>
+
+</table>

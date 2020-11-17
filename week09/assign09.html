@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/week09/style/main.css">
+    <script src="/week09/scripts/main.js"></script>
 </head>
+
 <body>
-    <h1>This will be assignment #9</h1>
+
+    <div class="content">
+        <h1>The biggest 10 cities</h1>
+        <select name="country" id="country" onchange="country()">
+            <option value="">Choose one:</option>
+            <option value="Canada">Canada</option>
+            <option value="USA">United States</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Russia">Russia</option>
+        </select>
+
+        <p id="display"></p>
+
+        <h1>Retrieving data from a file</h1>
+
+        <input type="text" name="filename" id="filename" placeholder="Insert Filename" required>
+        <button onclick="retrieveData()">Display</button>
+        <p id="display2"></p>
+    </div>
+
 </body>
+
 </html>

@@ -1,0 +1,15 @@
+<table>
+
+<tr><th>City</th><th>Population</th></tr>
+<tr><th> Moscow </th><th>             8,376,000 </th></tr>
+<tr><th> Sanka Peterburg </th><th>    4,619,800 </th></tr>
+<tr><th> Novosibrisk </th><th>        1,396,800 </th></tr>
+<tr><th> Nizhniy Novgorod </th><th>   1,346,400 </th></tr>
+<tr><th> Yekaterinburg  </th><th>     1,260,000 </th></tr>
+<tr><th> Samara </th><th>             1,150,000 </th></tr>
+<tr><th> Omsk </th><th>               1,137,900 </th></tr>
+<tr><th> Kazan  </th><th>             1,109,500 </th></tr>
+<tr><th> Ufa   </th><th>              1,094,900 </th></tr>
+<tr><th> Chelyabinsk </th><th>        1,081,200 </th></tr>
+
+</table>
