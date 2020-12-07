@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../week10/style/main.css">
+
+    <script src="../week10/scripts/mortage.js"></script>
+</head>
+
+<body>
+    <header>
+        <h2>Mortgage Calculator</h2>
+    </header>
+
+
+    <div class="clearfix">
+        <section>
+            <div class="row">
+                <div class="col-4 col-s-3 menu">
+                    <div class="button-link-container">
+                        <a href="../week10/assign10.html">
+                            <div class="button-link link-current">Mortgage Calculator</div>
+                        </a><br />
+                    </div>
+                </div>
+
+                <div class="col-4 col-s-9">
+
+                    <form id="form" action="mortgage.php" method="GET">
+                        Annual Percentage Rate<br>
+                        <input id="apr" type="text" name="apr" onchange="calculatePayment();"
+                            oninput="aprCheck('reqApr', 'aprError');">
+                        <span id='reqApr' style='visibility:hidden'>Fill out this field</span>
+                        <br>
+                        <span id='aprError' style='visibility:hidden'> Value must be between 0 and 25.00%</span>
+                        <br>
+                        Loan Term (in years)<br>
+                        <input id="term" type="text" name="term" onchange="calculatePayment();"
+                            oninput="termCheck('reqTerm', 'termError');">
+                        <span id='reqTerm' style='visibility:hidden'>Fill out this field</span>
+                        <br>
+                        <span id='termError' style='visibility:hidden'>Value must be greater then 0 and less or equal to
+                            40</span>
+                        <br>
+                        Loan Amount (in dollars)<br>
+                        <input id="amount" type="text" name="amount" onchange="calculatePayment();"
+                            oninput="amountCheck('reqAmount', 'amountError');">
+                        <span id='reqAmount' style='visibility:hidden'>Fill out this field</span>
+                        <br>
+                        <span id='amountError' style='visibility:hidden'>Value must be greater then 0</span>
+                        <br><br>
+                        <input id="clear" type="reset" name="clear" value="Clear" onclick="clearError();">
+                        <br><br>
+                        <input id="calculate" type="submit" name="calculate" value="Calculate">
+                    </form>
+                    <br>
+
+                </div>
+
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

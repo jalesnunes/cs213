@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Directory List</title>
+
+    <link rel="stylesheet" href="../week10/style/main.css">
+
+    <script src="../week10/scripts/main.js"></script>	
+        
 </head>
-<body>
-    <h1>This will be assignment #10</h1>
+<body onload="runAjax()">
+    <header>
+        <h2>Directory List</h2>
+	</header>
+      
+    <div class="clearfix">
+        <section>
+			<h1></h1>
+			<div class="row">
+				<div class="col-4 col-s-3 menu">
+					<div class="button-link-container">
+						<a href="../week10/assign10_1.html"><div class="button-link link-current">Directory List</div></a><br />
+					</div>
+				</div>
+                <div class="col-4 col-s-9">
+					<p id="table_dir"></p>
+				</div>
+			</div>
+        </section>    
+    </div>
 </body>
 </html>

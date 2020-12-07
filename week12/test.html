@@ -1,0 +1,40 @@
+<html>
+
+<body>
+   <p id="result"></p>
+   <script>
+      var myObj = {
+         "trip":
+         {
+            "startcity": "Boise",
+            "startstate": "ID",
+            "endcity": "Denver",
+            "endstate": "CO",
+            "miles": "814",
+            "tmode":
+               [
+                  "Plane",
+                  "Car",
+                  "Bus",
+                  "Bike",
+                  "Foot"
+               ]
+         }
+      }
+      var startCity = " " + myObj.trip.startcity.charAt(0).toUpperCase() + myObj.trip.startcity.slice(1) + " - ";
+      var startState = " " + myObj.trip.startstate.toUpperCase() + " ";
+      var endCity = " " + myObj.trip.endcity.charAt(0).toUpperCase() + myObj.trip.endcity.slice(1) + " - ";
+      var endState = " " + myObj.trip.endstate.toUpperCase() + " ";
+      var miles = myObj.trip.miles;
+
+      var text = "";
+      for (var i = 0; i < myObj.tmode.length; i++) {
+         text += myObj.tmode[i] + ", ";
+      }
+
+      document.getElementById("result").innerHTML = "The distance between " + "<strong>" + startCity + startState + "</strong>" + "and" + "<strong>" + endCity + endState + "</strong>" + "is: " + miles + " miles and you can use these types of  transportation: " + text;
+      document.write("Mr Ram has a car called" + " " + myObj.trip.miles);
+   </script>
+</body>
+
+</html>

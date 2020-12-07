@@ -78,6 +78,24 @@ input#submit:hover {
     cursor: pointer;
 }
 
+input#cancel {
+    background-color: rgb(238, 40, 66);
+    color: #FFF;
+    justify-content: left;
+    padding: 10px;
+    margin: 5px;
+    width: 500px;
+    border-radius: 10px;
+    font-size: 18pt;
+}
+
+input#cancel:hover {
+    background-color: rgb(233, 79, 100);
+    color: #FFF;
+    font-size: 18pt;
+    cursor: pointer;
+}
+
 input#reset {
     background-color: rgb(0, 217, 255);
     color: #FFF;

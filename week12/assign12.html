@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Milage Calculator</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../week12/style/main.css">
+
+    <script src="../week12/scripts/main.js"></script>
 </head>
+
 <body>
-    <h1>This will be assignment #12</h1>
+    <div class="jumbotron text-center">
+        <h1>Mileage Calculator</h1>
+        <p>Use the following mileage calculator to determine the travel distance</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>From:</h2>
+                <label>
+                    <input type="text" name="startCity" id="startCity" placeholder="Start City" required>
+                </label>
+                <label>
+                    <input type="text" name="startState" id="startState" max="2" placeholder="Start State" required>
+                </label>
+            </div>
+            <div class="col-sm-4">
+                <h2>To:</h2>
+                <label>
+                    <input type="text" name="endCity" id="endCity" placeholder="End City" required>
+                </label>
+                <label>
+                    <input type="text" name="endState" id="endState" max="2" placeholder="End State" required>
+                </label>
+            </div>
+        </div>
+        <button value="Get Distance" onclick="calcDistance()">Get Distance</button>
+
+
+        <p id="result"></p>
+    </div>
 </body>
+
 </html>
