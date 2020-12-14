@@ -1,0 +1,110 @@
+:root {
+    --primary-color: #fd951f;
+    --secondary-color: #f0a551;
+    --bd-color: #3f2a50;
+    --text-color: #f0f0f5;
+    --text-color-select: #9494a8;
+    --light-color: rgba(255, 255, 255, 0.09);
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--bd-color);
+    color: var(--text-color);
+}
+
+h1,
+h2 {
+    padding: 8px;
+}
+
+.hide {
+    display: none;
+}
+
+form {
+    background-color: var(--light-color);
+    margin: 32px auto;
+    display: flex;
+    padding: 32px 64px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+}
+
+div.input {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+input,
+button,
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    padding: 16px 0;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+    background-color: transparent;
+    outline: none;
+    color: var(--text-color);
+    font-size: 1em;
+}
+
+select {
+    color: var(--text-color-select);
+}
+
+button {
+    margin-top: 16px;
+    background-color: var(--primary-color);
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+input~label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: .4s;
+}
+
+input:focus~label,
+input:valid~label {
+    transform: translateY(-24px);
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+}
+
+
+@media (min-width: 600px) {
+    form {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 600px) {
+    form {
+        max-width: 400px;
+    }
+}

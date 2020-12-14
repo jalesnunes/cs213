@@ -1,11 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register Piano</title>
+
+    <link rel="stylesheet" href="../week13/style/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <script src="../week13/scripts/validation.js" defer></script>
+    <!--<script src="../week13/scripts/sendData.js" defer></script>-->
+
 </head>
-<body>
-    <h1>This will be assignment #13</h1>
+
+<body onload="getFile()">
+    <div class="container">
+        <form action="" method="GET" onchange="sendData()">
+            <h1 style="text-align: center;">Festival Competition Registration</h1>
+
+            <!--Section to register Perfornamce Info -->
+            <h2>Peformance Info</h2>
+
+            <div class="input">
+                <label> Type:</label>
+                <select name="performance_type" id="performance_type" onchange="checkPeformanceType(this)" required>
+                    <option value="">Choose one</option>
+                    <option id="solo" value="solo">Solo</option>
+                    <option id="duet" value="duet">Duet</option>
+                    <option id="concerto" value="concerto">Concerto</option>
+                </select>
+                <span id="error_0"></span>
+            </div>
+
+            <div class="input">
+                <label>Building:</label>
+                <select name="location" id="location" onchange="checkBuilding(this)" required>
+                    <option value="">Choose one</option>
+                    <option value="snow">Snow</option>
+                    <option value="austin">Austin</option>
+                    <option value="jales">Jales</option>
+                </select>
+                <span id="error_1"></span>
+            </div>
+
+            <div class="input">
+                <input type="text" name="room" id="room" onchange="validateInput(this)" required>
+                <label>Room#</label>
+                <span class="error"></span>
+            </div>
+
+            <div class="input">
+                <label>Time Slot:</label>
+                <select name="time_slot" id="time_slot" onchange="checkTimeSlot(this)" required>
+                    <option value="">Choose one</option>
+                    <option value="8:00 AM">8:00 AM</option>
+                    <option value="9:45 AM">9:45 AM</option>
+                </select>
+                <span id="error_2"></span>
+            </div>
+
+            <!--Section to register student Info -->
+            <h2>Student Info</h2>
+
+            <div class="input">
+                <input type="text" name="first_name" id="first_name" onchange="validateInput(this)" required>
+                <label>First Name</label>
+                <span id="error_3"></span>
+            </div>
+            <div class="input">
+                <input type="text" name="last_name" id="last_name" onchange="validateInput(this)" required>
+                <label>Last Name</label>
+                <span id="error_4"></span>
+            </div>
+            <div class="input">
+                <input type="text" name="student_id" id="student_id" onchange="validateInput(this)" required>
+                <label>Student ID</label>
+                <span id="error_5"></span>
+            </div>
+
+            <div class="input">
+                <label>Skill Level</label>
+                <select name="skill" id="skill" onchange="checkSkill(this)" required>
+                    <option value="">Choose one</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="pre-advanced">Pre-advanced</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+                <span id="error_6"></span>
+            </div>
+
+            <div class="input">
+                <label>Instrument</label>
+                <select name="instrument" id="instrument" onchange="checkInstrument(this)" required>
+                    <option value="">Choose one</option>
+                    <option value="piano">Piano</option>
+                    <option value="voice">Voice</option>
+                    <option value="string">String</option>
+                    <option value="organ">Organ</option>
+                    <option value="other">Other</option>
+                </select>
+                <span id="error_7"></span>
+            </div>
+
+
+
+            <div class="hide">
+                <h2>Student Info 2</h2>
+
+                <div class="input">
+                    <input type="text" name="first_name_2" id="first_name_2" onchange="validateInput(this)" >
+                    <label>First Name</label>
+                    <span class="error"></span>
+                </div>
+                <div class="input">
+                    <input type="text" name="last_name_2" id="last_name_2" onchange="validateInput(this)">
+                    <label>Last Name</label>
+                    <span class="error"></span>
+                </div>
+                <div class="input">
+                    <input type="text" name="student_id_2" id="student_id_2" onchange="validateInput(this)">
+                    <label>Student ID</label>
+                    <span class="error"></span>
+                </div>
+
+                <div class="input">
+                    <label>Skill Level</label>
+                    <select name="skill_2" id="skill_2" >
+                        <option value="">Choose one</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="pre-advanced">Pre-advanced</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                    <span class="error"></span>
+                </div>
+
+                <div class="input">
+                    <label>Instrument</label>
+                    <select name="instrument_2" id="instrument_2" >
+                        <option value="">Choose one</option>
+                        <option value="piano">Piano</option>
+                        <option value="voice">Voice</option>
+                        <option value="string">String</option>
+                        <option value="organ">Organ</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <span class="error"></span>
+                </div>
+            </div>
+
+            <button type="submit" onclick="sendData()">Register Student</button>
+            <button type="reset" onclick="clear(this)" >Clear Form</button>
+
+            <div id="loaddoc" class="input">
+            
+            </div>
+
+        </form>
+    </div>
 </body>
+
 </html>
